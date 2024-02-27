@@ -14,7 +14,7 @@
 
       perSystem = { config, self', inputs', pkgs, system, ... }: {
         devenv.shells.default = {
-	   packages = with pkgs; [ sbt temurin-jre-bin-17 ];
+	   packages = with pkgs; [ sbt jdk17_headless bloop ];
         };
       };
     };
